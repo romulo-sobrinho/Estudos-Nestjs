@@ -1,8 +1,11 @@
 // import { CreateCourseDto } from "./create-course.dto";
 // import { PartialType } from "@nestjs/mapped-types";
-import { IsString } from "class-validator";
+import { IsDate, IsString } from "class-validator";
+// import { PartialType } from "@nestjs/mapped-types";
+// import { CreateCourseDto } from "./create-course.dto";
 
 // export class UpdateCoursesDto extends PartialType(CreateCourseDto) {}
+
 export class UpdateCoursesDto {
   @IsString()
   readonly name?: string;
